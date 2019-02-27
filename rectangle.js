@@ -11,7 +11,7 @@ $(function(){
     var h = Number($height.val());
 
     var p = 2 * ( w + h);
-    var a = w + h;
+    var a = w * h;
 
     $perimeter.val(p);
     $area.val(a);
