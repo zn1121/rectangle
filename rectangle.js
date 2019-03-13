@@ -7,14 +7,17 @@ $(function(){
   console.log('asdasdasd');
 
   $btnCal.click(function(){
-    var w = Number($width.val());
-    var h = Number($height.val());
+    var w = $width.val();
+    var h = $height.val();
 
     var p = 2 * ( w + h);
     var a = w * h;
+    var r = new Rectangle(w,h);
 
     $perimeter.val(p);
     $area.val(a);
+    $perimeter.val(r.perimeter());
+        $area.val(r.area());
 
     console.log(w);
     console.log(h);
